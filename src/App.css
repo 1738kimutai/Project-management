@@ -22,9 +22,9 @@ body {
   margin-right: 1rem;
   padding: .6rem;
   width: 10rem;
-  background: #222;
+  background: rgb(23, 21, 21);
   border: none;
-  color: rgb(59, 4, 4);
+  color: rgb(213, 205, 205);
   font-size: 1.2rem;
   transition: all .5s;
   cursor: pointer;
@@ -41,12 +41,12 @@ body {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
   font-weight: 300;
-  color: black;
+  color: rgb(234, 217, 217);
 }
 .main-para {
   font-size: large;
   text-Transform: capitalize;
-  color: #333;
+  color: rgb(169, 149, 149);
 }
 #reg_btn span {
   display: inline-block;

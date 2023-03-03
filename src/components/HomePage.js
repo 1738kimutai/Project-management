@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom'
 const Manage = () => {
  const [showForm, setshowform] = useState(true);
  const [showNew, setshowNew] = useState(true);
@@ -103,6 +104,17 @@ const Manage = () => {
  // ADD NEW TASK
  return (
    <>
+   {showNew ? (
+       <div className="container">
+         <div className="col-12 text-end">
+         <Link to="/">
+                <button className="btn btn-primary" onclick={handleAdd}>Log out</button>
+            </Link>
+         </div>
+       </div>
+     ) : (
+       ""
+     )}
      {showNew ? (
        <div className="container">
          <div className="col-12 text-end">
@@ -194,6 +206,9 @@ const Manage = () => {
                    ) : (
                      ""
                    )}
+                
+                   
+                   
                  </div>
                </div>
            );
