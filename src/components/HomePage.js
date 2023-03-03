@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-
-const Todo = () => {
+const Manage = () => {
  const [showForm, setshowform] = useState(true);
  const [showNew, setshowNew] = useState(true);
  const [showDelete, setshowDelete] = useState(true);
@@ -15,8 +14,8 @@ const Todo = () => {
  const [items, setitems] = useState([
    {
      id: "001",
-     name: "Default Task",
-     desc: "Default Description",
+     name: "Project Added",
+     desc: "Project Description",
      status: false,
    },
  ]);
@@ -120,7 +119,7 @@ const Todo = () => {
          <div className="container border rounded d-flex justify-content-center shadow p-3 mb-5 bg-white rounded">
            <div className="row">
              <div className="text-center">
-               <h2>{toggleSubmit ? "Add Task" : " Edit Task"}</h2>
+               <h2>{toggleSubmit ? "Add Project" : " Edit Task"}</h2>
              </div>
              <form className="col-12 p-2" onSubmit={handleSubmit}>
                <label htmlFor="title" className="my-2">
@@ -206,4 +205,4 @@ const Todo = () => {
    </>
  );
 };
-export default Todo;
+export default Manage

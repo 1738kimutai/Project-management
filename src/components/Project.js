@@ -1,20 +1,20 @@
 import React from 'react'
-function Header() {
+function Project() {
     return (
       <div>
         <nav className="nav">
           <div className="nav-left">
             <a className="brand" href="#">
-                WPWeb Tasks
+                Project Manager
             </a>
           </div>
           <div className="nav-right">
             <div className="tabs">
-              <a href="https://wpwebinfotech.com">project management</a>
+              <a href>Project Management App</a>
             </div>
           </div>
         </nav>
       </div>
     );
 }
-export default Header;
+export default Project
